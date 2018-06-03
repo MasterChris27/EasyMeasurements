@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:weightSum="20"
+    tools:context="com.example.intern12.easymeasurements.DetailActivity">
+
+    <!--Representative img-->
+    <RelativeLayout
+        android:layout_weight="8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    <ImageView
+        android:id="@+id/detail_imgview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/ic_launcher" />
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:text="Reset"/>
+</RelativeLayout>
+    <!--Actual details -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+
+        <!--design it !!-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_divider_size"
+            android:background="@color/divider_color" />
+        <!--Area name-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/nume_zona"
+                android:textSize="@dimen/detail_text_size" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/edit_text_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/edit_text_hint"
+                    android:imeOptions="actionDone"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:inputType="text"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/text_view_detail_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/text_no_info"
+                    android:textSize="@dimen/detail_text_size" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--divider-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_divider_size"
+            android:background="@color/divider_color" />
+        <!--Area culture-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/text_suprafata"
+                android:textSize="@dimen/detail_text_size" />
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/edit_text_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/edit_text_hint"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="6"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/text_view_detail_suprafata"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_weight="4"
+                        android:text="@string/text_no_info"
+                        android:textSize="@dimen/detail_text_size" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:text="ha"
+                        android:textSize="@dimen/detail_text_size" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--divider-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_divider_size"
+            android:background="@color/divider_color" />
+        <!--Area size-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/nume_cultura"
+                android:textSize="@dimen/detail_text_size" />
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/edit_text_cultura"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/edit_text_hint"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/text_view_detail_cultura"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/text_no_info"
+                    android:textSize="@dimen/detail_text_size" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <!--divider-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_divider_size"
+            android:background="@color/divider_color" />
+        <!--Area owner-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Proprietar:"
+                android:textSize="@dimen/detail_text_size" />
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/edit_text_owner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/edit_text_hint"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/text_view_detail_owner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/text_no_info"
+                    android:textSize="@dimen/detail_text_size" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--divider-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_divider_size"
+            android:background="@color/divider_color" />
+
+
+    </LinearLayout>
+
+    <!--Buttons for reset and apply-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:textSize="@dimen/detail_text_size"
+            android:layout_alignBaseline="@+id/btn_confirm"
+            android:layout_alignBottom="@+id/btn_confirm"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="4dp" />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dp"
+            android:text="@string/text_confirma"
+            android:textSize="@dimen/detail_text_size" />
+
+    </RelativeLayout>
+
+</LinearLayout>

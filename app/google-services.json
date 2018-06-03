@@ -1,0 +1,48 @@
+{
+  "rules": {
+    ".read": true,
+    ".write": true
+  },
+
+  "project_info": {
+    "project_number": "648407167510",
+    "firebase_url": "https://easymeasurements-1494837621863.firebaseio.com",
+    "project_id": "easymeasurements-1494837621863",
+    "storage_bucket": "easymeasurements-1494837621863.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:648407167510:android:c9f223ad69a6c2e2",
+        "android_client_info": {
+          "package_name": "com.example.intern12.easymeasurements"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "648407167510-ten1etrkbb1v01b2en6u9gu0e6t455tv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBc9qg0pL1SBUErEwy5vShgkKzOBfiZ2g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+
+}

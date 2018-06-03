@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">EasyMeasurements</string>
+    <string name="home_profile">Profilul Meu</string>
+    <string name="home_my_measure">Masurari</string>
+    <string name="home_measure">Masurare Noua</string>
+    <string name="home_login"> Login Options</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="nume_zona">Numele zonei:</string>
+    <string name="nume_cultura">Cultura curenta:</string>
+    <string name="text_suprafata">Suprafata:</string>
+    <string name="text_detail_owner">Proprietar</string>
+    <string name="text_ultimul_update">Ultima actualizare:</string>
+    <string name="text_no_info">-</string>
+    <string name="alert_title">Schibmarea datelor</string>
+    <string name="alert_message">Doriti schimbarea datelor ?</string>
+    <string name="alert_pozitiv">Da</string>
+    <string name="alert_negativ">Nu</string>
+    <string name="text_confirma">Confirma</string>
+    <string name="edit_text_hint">Introduceti valoarea</string>
+    <string name="alert_delete_title">Stergerea datelor</string>
+    <string name="alert_delete_message">Confirmati stergerea ?</string>
+    <string name="alert_net_tile">Conexiune la internet</string>
+    <string name="alert_net_message">Aplicatia necesita conexiune la internet !</string>
+    <string name="alert_net_settings">Setari internet </string>
+
+    <string-array name="calc_options">
+            <item>Suprafata</item>
+            <item>Distanta</item>
+    </string-array>
+
+
+
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
